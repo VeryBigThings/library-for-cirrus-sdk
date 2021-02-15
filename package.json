@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/tlevacic/react-native-vbt-cirrusmd-bridge-library",
+  "repository": "https://github.com/tlevacic/library-for-cirrus-sdk",
   "author": "Tin Levacic <tin.levacic@verybigthings.com> (https://github.com/tlevacic)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tlevacic/react-native-vbt-cirrusmd-bridge-library/issues"
+    "url": "https://github.com/tlevacic/library-for-cirrus-sdk/issues"
   },
-  "homepage": "https://github.com/tlevacic/react-native-vbt-cirrusmd-bridge-library#readme",
+  "homepage": "https://github.com/tlevacic/library-for-cirrus-sdk#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
