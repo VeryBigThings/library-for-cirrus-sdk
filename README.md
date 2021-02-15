@@ -79,11 +79,11 @@ ld: warning: Could not find or use auto-linked library 'swiftWebKit'
 ld: warning: Could not find or use auto-linked library 'swiftCoreMIDI'
 ld: warning: Could not find or use auto-linked library 'swiftUniformTypeIdentifiers'
 ```
+Navigate to your ios folder and create `File.swift` file. You just need to have `import Foundation` on top.
 
 ### The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0
 
 Open IOS folder in xcode, go to build settings, search for `IOS Deployment Target` and set it to `12`.
-Navigate to your ios folder and create `File.swift` file. You must have `import Foundation` on top.
 
 ### Error: Failed to install the app. Make sure you have the Android development environment set up
 Make sure your ANDROID_SDK_PATH is set.
