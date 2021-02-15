@@ -17,6 +17,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* VbtCirrusmdBridgeLibraryExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VbtCirrusmdBridgeLibraryExampleTests.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		822796E6290C746A97476E13 /* Pods_VbtCirrusmdBridgeLibraryExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916E21E76EE9B95D401BAA4E /* Pods_VbtCirrusmdBridgeLibraryExample.framework */; };
+		91BC4E6825DAA20E00DD8C6F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC4E6725DAA20E00DD8C6F /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		47F7ED3B7971BE374F7B8635 /* Pods-VbtCirrusmdBridgeLibraryExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VbtCirrusmdBridgeLibraryExample.debug.xcconfig"; path = "Target Support Files/Pods-VbtCirrusmdBridgeLibraryExample/Pods-VbtCirrusmdBridgeLibraryExample.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = VbtCirrusmdBridgeLibraryExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		916E21E76EE9B95D401BAA4E /* Pods_VbtCirrusmdBridgeLibraryExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VbtCirrusmdBridgeLibraryExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91BC4E6725DAA20E00DD8C6F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		E00ACF0FDA8BF921659E2F9A /* Pods-VbtCirrusmdBridgeLibraryExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VbtCirrusmdBridgeLibraryExample.release.xcconfig"; path = "Target Support Files/Pods-VbtCirrusmdBridgeLibraryExample/Pods-VbtCirrusmdBridgeLibraryExample.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -117,6 +119,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				91BC4E6725DAA20E00DD8C6F /* File.swift */,
 			);
 			name = VbtCirrusmdBridgeLibraryExample;
 			sourceTree = "<group>";
@@ -137,7 +140,6 @@
 				47F7ED3B7971BE374F7B8635 /* Pods-VbtCirrusmdBridgeLibraryExample.debug.xcconfig */,
 				E00ACF0FDA8BF921659E2F9A /* Pods-VbtCirrusmdBridgeLibraryExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -266,7 +268,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1220;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -400,7 +402,6 @@
 				"${BUILT_PRODUCTS_DIR}/UMReactNativeAdapter/UMReactNativeAdapter.framework",
 				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
 				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
-				"${BUILT_PRODUCTS_DIR}/react-native-vbt-cirrusmd-bridge-library/react_native_vbt_cirrusmd_bridge_library.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -448,7 +449,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UMReactNativeAdapter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_vbt_cirrusmd_bridge_library.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -545,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				91BC4E6825DAA20E00DD8C6F /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +586,7 @@
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -607,6 +609,7 @@
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = VbtCirrusmdBridgeLibraryExampleTests/Info.plist;
