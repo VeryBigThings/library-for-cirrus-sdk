@@ -1,8 +1,51 @@
 PODS:
+  - Appboy-iOS-SDK (3.30.0):
+    - Appboy-iOS-SDK/UI (= 3.30.0)
+  - Appboy-iOS-SDK/ContentCards (3.30.0):
+    - Appboy-iOS-SDK/Core
+    - SDWebImage (< 6, >= 5.8.2)
+  - Appboy-iOS-SDK/Core (3.30.0)
+  - Appboy-iOS-SDK/InAppMessage (3.30.0):
+    - Appboy-iOS-SDK/Core
+    - SDWebImage (< 6, >= 5.8.2)
+  - Appboy-iOS-SDK/NewsFeed (3.30.0):
+    - Appboy-iOS-SDK/Core
+    - SDWebImage (< 6, >= 5.8.2)
+  - Appboy-iOS-SDK/UI (3.30.0):
+    - Appboy-iOS-SDK/ContentCards
+    - Appboy-iOS-SDK/Core
+    - Appboy-iOS-SDK/InAppMessage
+    - Appboy-iOS-SDK/NewsFeed
+  - AwaitKit (5.2.0):
+    - PromiseKit (~> 6)
   - boost-for-react-native (1.63.0)
-  - CocoaAsyncSocket (7.6.5)
-  - CocoaLibEvent (1.0.0)
+  - CirrusMDSDK (6.2.0):
+    - Appboy-iOS-SDK (~> 3.30.0)
+    - Kingfisher (~> 5.15.3)
+    - KTVJSONWebToken (~> 2.1.0)
+    - MBProgressHUD (~> 1.2.0)
+    - ObjectMapper (~> 4.2.0)
+    - OpenTok (~> 2.18.0)
+    - ReachabilitySwift (~> 5.0.0)
+    - RNCryptor (~> 5.1.0)
+    - SnapKit (~> 5.0.1)
+    - Starscream (~> 3.1.1)
+    - Then (~> 2.7.0)
+    - UDF (~> 0.7.0)
   - DoubleConversion (1.1.6)
+  - EXConstants (9.2.0):
+    - UMConstantsInterface
+    - UMCore
+  - EXFileSystem (9.2.0):
+    - UMCore
+    - UMFileSystemInterface
+  - EXImageLoader (1.2.0):
+    - React-Core
+    - UMCore
+    - UMImageLoaderInterface
+  - EXPermissions (9.3.0):
+    - UMCore
+    - UMPermissionsInterface
   - FBLazyVector (0.63.4)
   - FBReactNativeSpec (0.63.4):
     - Folly (= 2020.01.13.00)
@@ -11,52 +54,6 @@ PODS:
     - React-Core (= 0.63.4)
     - React-jsi (= 0.63.4)
     - ReactCommon/turbomodule/core (= 0.63.4)
-  - Flipper (0.54.0):
-    - Flipper-Folly (~> 2.2)
-    - Flipper-RSocket (~> 1.1)
-  - Flipper-DoubleConversion (1.1.7)
-  - Flipper-Folly (2.3.0):
-    - boost-for-react-native
-    - CocoaLibEvent (~> 1.0)
-    - Flipper-DoubleConversion
-    - Flipper-Glog
-    - OpenSSL-Universal (= 1.0.2.20)
-  - Flipper-Glog (0.3.6)
-  - Flipper-PeerTalk (0.0.4)
-  - Flipper-RSocket (1.1.0):
-    - Flipper-Folly (~> 2.2)
-  - FlipperKit (0.54.0):
-    - FlipperKit/Core (= 0.54.0)
-  - FlipperKit/Core (0.54.0):
-    - Flipper (~> 0.54.0)
-    - FlipperKit/CppBridge
-    - FlipperKit/FBCxxFollyDynamicConvert
-    - FlipperKit/FBDefines
-    - FlipperKit/FKPortForwarding
-  - FlipperKit/CppBridge (0.54.0):
-    - Flipper (~> 0.54.0)
-  - FlipperKit/FBCxxFollyDynamicConvert (0.54.0):
-    - Flipper-Folly (~> 2.2)
-  - FlipperKit/FBDefines (0.54.0)
-  - FlipperKit/FKPortForwarding (0.54.0):
-    - CocoaAsyncSocket (~> 7.6)
-    - Flipper-PeerTalk (~> 0.0.4)
-  - FlipperKit/FlipperKitHighlightOverlay (0.54.0)
-  - FlipperKit/FlipperKitLayoutPlugin (0.54.0):
-    - FlipperKit/Core
-    - FlipperKit/FlipperKitHighlightOverlay
-    - FlipperKit/FlipperKitLayoutTextSearchable
-    - YogaKit (~> 1.18)
-  - FlipperKit/FlipperKitLayoutTextSearchable (0.54.0)
-  - FlipperKit/FlipperKitNetworkPlugin (0.54.0):
-    - FlipperKit/Core
-  - FlipperKit/FlipperKitReactPlugin (0.54.0):
-    - FlipperKit/Core
-  - FlipperKit/FlipperKitUserDefaultsPlugin (0.54.0):
-    - FlipperKit/Core
-  - FlipperKit/SKIOSNetworkPlugin (0.54.0):
-    - FlipperKit/Core
-    - FlipperKit/FlipperKitNetworkPlugin
   - Folly (2020.01.13.00):
     - boost-for-react-native
     - DoubleConversion
@@ -67,15 +64,29 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - OpenSSL-Universal (1.0.2.20):
-    - OpenSSL-Universal/Static (= 1.0.2.20)
-  - OpenSSL-Universal/Static (1.0.2.20)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - KTVJSONWebToken (2.1.0)
+  - MBProgressHUD (1.2.0)
+  - ObjectMapper (4.2.0)
+  - OpenTok (2.18.1)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
   - RCTRequired (0.63.4)
   - RCTTypeSafety (0.63.4):
     - FBLazyVector (= 0.63.4)
     - Folly (= 2020.01.13.00)
     - RCTRequired (= 0.63.4)
     - React-Core (= 0.63.4)
+  - ReachabilitySwift (5.0.0)
   - React (0.63.4):
     - React-Core (= 0.63.4)
     - React-Core/DevSupport (= 0.63.4)
@@ -298,35 +309,46 @@ PODS:
     - React-Core (= 0.63.4)
     - React-cxxreact (= 0.63.4)
     - React-jsi (= 0.63.4)
+  - RNCryptor (5.1.0)
+  - SDWebImage (5.10.2):
+    - SDWebImage/Core (= 5.10.2)
+  - SDWebImage/Core (5.10.2)
+  - SnapKit (5.0.1)
+  - Starscream (3.1.1)
+  - Then (2.7.0)
+  - UDF (0.7.0)
+  - UMAppLoader (1.3.0)
+  - UMBarCodeScannerInterface (5.3.0)
+  - UMCameraInterface (5.3.0)
+  - UMConstantsInterface (5.3.0)
+  - UMCore (5.5.1)
+  - UMFaceDetectorInterface (5.3.0)
+  - UMFileSystemInterface (5.3.0)
+  - UMFontInterface (5.3.0)
+  - UMImageLoaderInterface (5.3.0)
+  - UMPermissionsInterface (5.3.0):
+    - UMCore
+  - UMReactNativeAdapter (5.6.0):
+    - React-Core
+    - UMCore
+    - UMFontInterface
+  - UMSensorsInterface (5.3.0)
+  - UMTaskManagerInterface (5.3.0)
   - Yoga (1.14.0)
-  - YogaKit (1.18.1):
-    - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - AwaitKit (~> 5.2.0)
+  - CirrusMDSDK (~> 6.2.0)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - EXConstants (from `../node_modules/expo-constants/ios`)
+  - EXFileSystem (from `../node_modules/expo-file-system/ios`)
+  - EXImageLoader (from `../node_modules/expo-image-loader/ios`)
+  - EXPermissions (from `../node_modules/expo-permissions/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
-  - Flipper (~> 0.54.0)
-  - Flipper-DoubleConversion (= 1.1.7)
-  - Flipper-Folly (~> 2.2)
-  - Flipper-Glog (= 0.3.6)
-  - Flipper-PeerTalk (~> 0.0.4)
-  - Flipper-RSocket (~> 1.1)
-  - FlipperKit (~> 0.54.0)
-  - FlipperKit/Core (~> 0.54.0)
-  - FlipperKit/CppBridge (~> 0.54.0)
-  - FlipperKit/FBCxxFollyDynamicConvert (~> 0.54.0)
-  - FlipperKit/FBDefines (~> 0.54.0)
-  - FlipperKit/FKPortForwarding (~> 0.54.0)
-  - FlipperKit/FlipperKitHighlightOverlay (~> 0.54.0)
-  - FlipperKit/FlipperKitLayoutPlugin (~> 0.54.0)
-  - FlipperKit/FlipperKitLayoutTextSearchable (~> 0.54.0)
-  - FlipperKit/FlipperKitNetworkPlugin (~> 0.54.0)
-  - FlipperKit/FlipperKitReactPlugin (~> 0.54.0)
-  - FlipperKit/FlipperKitUserDefaultsPlugin (~> 0.54.0)
-  - FlipperKit/SKIOSNetworkPlugin (~> 0.54.0)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - PromiseKit (~> 6.13.1)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -350,26 +372,54 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - UMAppLoader (from `../node_modules/unimodules-app-loader/ios`)
+  - UMBarCodeScannerInterface (from `../node_modules/unimodules-barcode-scanner-interface/ios`)
+  - UMCameraInterface (from `../node_modules/unimodules-camera-interface/ios`)
+  - UMConstantsInterface (from `../node_modules/unimodules-constants-interface/ios`)
+  - "UMCore (from `../node_modules/@unimodules/core/ios`)"
+  - UMFaceDetectorInterface (from `../node_modules/unimodules-face-detector-interface/ios`)
+  - UMFileSystemInterface (from `../node_modules/unimodules-file-system-interface/ios`)
+  - UMFontInterface (from `../node_modules/unimodules-font-interface/ios`)
+  - UMImageLoaderInterface (from `../node_modules/unimodules-image-loader-interface/ios`)
+  - UMPermissionsInterface (from `../node_modules/unimodules-permissions-interface/ios`)
+  - "UMReactNativeAdapter (from `../node_modules/@unimodules/react-native-adapter/ios`)"
+  - UMSensorsInterface (from `../node_modules/unimodules-sensors-interface/ios`)
+  - UMTaskManagerInterface (from `../node_modules/unimodules-task-manager-interface/ios`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
+  https://github.com/CirrusMD/podspecs.git:
+    - CirrusMDSDK
+    - UDF
+  https://github.com/CocoaPods/Specs.git:
+    - Appboy-iOS-SDK
+    - AwaitKit
+    - Kingfisher
+    - KTVJSONWebToken
+    - MBProgressHUD
+    - ObjectMapper
+    - OpenTok
+    - PromiseKit
+    - ReachabilitySwift
+    - RNCryptor
+    - SDWebImage
+    - SnapKit
+    - Starscream
+    - Then
   trunk:
     - boost-for-react-native
-    - CocoaAsyncSocket
-    - CocoaLibEvent
-    - Flipper
-    - Flipper-DoubleConversion
-    - Flipper-Folly
-    - Flipper-Glog
-    - Flipper-PeerTalk
-    - Flipper-RSocket
-    - FlipperKit
-    - OpenSSL-Universal
-    - YogaKit
 
 EXTERNAL SOURCES:
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  EXConstants:
+    :path: "../node_modules/expo-constants/ios"
+  EXFileSystem:
+    :path: "../node_modules/expo-file-system/ios"
+  EXImageLoader:
+    :path: "../node_modules/expo-image-loader/ios"
+  EXPermissions:
+    :path: "../node_modules/expo-permissions/ios"
   FBLazyVector:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   FBReactNativeSpec:
@@ -420,28 +470,58 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  UMAppLoader:
+    :path: "../node_modules/unimodules-app-loader/ios"
+  UMBarCodeScannerInterface:
+    :path: "../node_modules/unimodules-barcode-scanner-interface/ios"
+  UMCameraInterface:
+    :path: "../node_modules/unimodules-camera-interface/ios"
+  UMConstantsInterface:
+    :path: "../node_modules/unimodules-constants-interface/ios"
+  UMCore:
+    :path: "../node_modules/@unimodules/core/ios"
+  UMFaceDetectorInterface:
+    :path: "../node_modules/unimodules-face-detector-interface/ios"
+  UMFileSystemInterface:
+    :path: "../node_modules/unimodules-file-system-interface/ios"
+  UMFontInterface:
+    :path: "../node_modules/unimodules-font-interface/ios"
+  UMImageLoaderInterface:
+    :path: "../node_modules/unimodules-image-loader-interface/ios"
+  UMPermissionsInterface:
+    :path: "../node_modules/unimodules-permissions-interface/ios"
+  UMReactNativeAdapter:
+    :path: "../node_modules/@unimodules/react-native-adapter/ios"
+  UMSensorsInterface:
+    :path: "../node_modules/unimodules-sensors-interface/ios"
+  UMTaskManagerInterface:
+    :path: "../node_modules/unimodules-task-manager-interface/ios"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  Appboy-iOS-SDK: b16eca47f70f673c563f4380046fd67323860669
+  AwaitKit: 512626cd12c82b1fbffddc8f414d0364cb456004
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
-  CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
+  CirrusMDSDK: d6b9fa8b450cf9dcc673185ab79dca849a611e13
   DoubleConversion: cde416483dac037923206447da6e1454df403714
+  EXConstants: f486f6b4a36b86e47ab258d4d2b7b2699786fdce
+  EXFileSystem: afe9b1fd937d30270bf5108ba44e2f4a1d1ad694
+  EXImageLoader: 7153fb1307ac643299a9072b71da0d276f4c7789
+  EXPermissions: 30cbe5b72bd209b65c00884180ad058a60bb413d
   FBLazyVector: 3bb422f41b18121b71783a905c10e58606f7dc3e
   FBReactNativeSpec: f2c97f2529dd79c083355182cc158c9f98f4bd6e
-  Flipper: be611d4b742d8c87fbae2ca5f44603a02539e365
-  Flipper-DoubleConversion: 38631e41ef4f9b12861c67d17cb5518d06badc41
-  Flipper-Folly: e4493b013c02d9347d5e0cb4d128680239f6c78a
-  Flipper-Glog: 1dfd6abf1e922806c52ceb8701a3599a79a200a6
-  Flipper-PeerTalk: 116d8f857dc6ef55c7a5a75ea3ceaafe878aadc9
-  Flipper-RSocket: 64e7431a55835eb953b0bf984ef3b90ae9fdddd7
-  FlipperKit: ab353d41aea8aae2ea6daaf813e67496642f3d7d
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
-  OpenSSL-Universal: ff34003318d5e1163e9529b08470708e389ffcdd
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  KTVJSONWebToken: c3cc06e26876d63c62a5c40c5e89939899de48cf
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  OpenTok: 2a816f5d77fbf2e2ebb5aec841bd21fb7dc7737b
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   RCTRequired: 082f10cd3f905d6c124597fd1c14f6f2655ff65e
   RCTTypeSafety: 8c9c544ecbf20337d069e4ae7fd9a377aadf504b
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   React: b0a957a2c44da4113b0c4c9853d8387f8e64e615
   React-callinvoker: c3f44dd3cb195b6aa46621fff95ded79d59043fe
   React-Core: d3b2a1ac9a2c13c3bcde712d9281fc1c8a5b315b
@@ -461,9 +541,27 @@ SPEC CHECKSUMS:
   React-RCTText: 5c51df3f08cb9dedc6e790161195d12bac06101c
   React-RCTVibration: ae4f914cfe8de7d4de95ae1ea6cc8f6315d73d9d
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
+  RNCryptor: a369134686cd2ad391323cc856b62e591193ba79
+  SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+  UDF: fe8d48fbc2187db4a0d888e29427a5916cc062f7
+  UMAppLoader: 5db5dc03176c6238da9c8b3657a370137882a4ad
+  UMBarCodeScannerInterface: 017672479f93de88d94c3a50dfb66b5348b65989
+  UMCameraInterface: 22bd2c4bf15dcf68530368fa5704af7490818457
+  UMConstantsInterface: ff612789417aace6fd01a9c35616bc87dcdc8d97
+  UMCore: 94e4725ab2efbbe247b5910a2a954a2dab64f7eb
+  UMFaceDetectorInterface: 9bc6a197ad9d4d16ba13bfdf2340dd7f24964308
+  UMFileSystemInterface: e7795274eee76beaadaf6015bcc7f5da3054b925
+  UMFontInterface: bc5dd878b2f6fffdac80e41fd36893c619683712
+  UMImageLoaderInterface: 78ab0fd45c2bcaee61957fa23858bf31f2bcb122
+  UMPermissionsInterface: 4f21b0c2aaf953cf041109ff44231b2a69e22836
+  UMReactNativeAdapter: 61ae88818058b7849bbf5b79bf97872cb3c8e0eb
+  UMSensorsInterface: 49bea41dcfcc041f0bbab27cfe4a6006f1dde0c0
+  UMTaskManagerInterface: 6cad5929dbc0a5b986ad4d77caac497d4de730a7
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
-  YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: dd8e65f63a2daf9cdda10e2b18041fdf919b349d
+PODFILE CHECKSUM: b9200e942962718615510c456e82789bf8c3670a
 
 COCOAPODS: 1.10.1

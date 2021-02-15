@@ -15,8 +15,8 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* VbtCirrusmdBridgeLibraryExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VbtCirrusmdBridgeLibraryExampleTests.m */; };
-		4C39C56BAD484C67AA576FFA /* libPods-VbtCirrusmdBridgeLibraryExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3E69C5B9553B26FBA2DF04 /* libPods-VbtCirrusmdBridgeLibraryExample.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		822796E6290C746A97476E13 /* Pods_VbtCirrusmdBridgeLibraryExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916E21E76EE9B95D401BAA4E /* Pods_VbtCirrusmdBridgeLibraryExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		2D02E4901E0B4A5D006451C7 /* VbtCirrusmdBridgeLibraryExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VbtCirrusmdBridgeLibraryExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F7ED3B7971BE374F7B8635 /* Pods-VbtCirrusmdBridgeLibraryExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VbtCirrusmdBridgeLibraryExample.debug.xcconfig"; path = "Target Support Files/Pods-VbtCirrusmdBridgeLibraryExample/Pods-VbtCirrusmdBridgeLibraryExample.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = VbtCirrusmdBridgeLibraryExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CA3E69C5B9553B26FBA2DF04 /* libPods-VbtCirrusmdBridgeLibraryExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VbtCirrusmdBridgeLibraryExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		916E21E76EE9B95D401BAA4E /* Pods_VbtCirrusmdBridgeLibraryExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VbtCirrusmdBridgeLibraryExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00ACF0FDA8BF921659E2F9A /* Pods-VbtCirrusmdBridgeLibraryExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VbtCirrusmdBridgeLibraryExample.release.xcconfig"; path = "Target Support Files/Pods-VbtCirrusmdBridgeLibraryExample/Pods-VbtCirrusmdBridgeLibraryExample.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C39C56BAD484C67AA576FFA /* libPods-VbtCirrusmdBridgeLibraryExample.a in Frameworks */,
+				822796E6290C746A97476E13 /* Pods_VbtCirrusmdBridgeLibraryExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,7 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				CA3E69C5B9553B26FBA2DF04 /* libPods-VbtCirrusmdBridgeLibraryExample.a */,
+				916E21E76EE9B95D401BAA4E /* Pods_VbtCirrusmdBridgeLibraryExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C1D60D28B925C94BD88E79D7 /* [CP] Copy Pods Resources */,
+				0FF2F5CD23FED632A76C1DDD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,6 +349,112 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		0FF2F5CD23FED632A76C1DDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VbtCirrusmdBridgeLibraryExample/Pods-VbtCirrusmdBridgeLibraryExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Appboy-iOS-SDK/Appboy_iOS_SDK.framework",
+				"${BUILT_PRODUCTS_DIR}/AwaitKit/AwaitKit.framework",
+				"${PODS_ROOT}/CirrusMDSDK/CirrusMDSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/EXConstants/EXConstants.framework",
+				"${BUILT_PRODUCTS_DIR}/EXFileSystem/EXFileSystem.framework",
+				"${BUILT_PRODUCTS_DIR}/EXImageLoader/EXImageLoader.framework",
+				"${BUILT_PRODUCTS_DIR}/EXPermissions/EXPermissions.framework",
+				"${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/KTVJSONWebToken/KTVJSONWebToken.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
+				"${BUILT_PRODUCTS_DIR}/React-CoreModules/CoreModules.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTAnimation/RCTAnimation.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTBlob/RCTBlob.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTImage/RCTImage.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTLinking/RCTLinking.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTNetwork/RCTNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTSettings/RCTSettings.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTText/RCTText.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTVibration/RCTVibration.framework",
+				"${BUILT_PRODUCTS_DIR}/React-cxxreact/cxxreact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsi/jsi.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsiexecutor/jsireact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsinspector/jsinspector.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactCommon/ReactCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/UDF/UDF.framework",
+				"${BUILT_PRODUCTS_DIR}/UMAppLoader/UMAppLoader.framework",
+				"${BUILT_PRODUCTS_DIR}/UMCore/UMCore.framework",
+				"${BUILT_PRODUCTS_DIR}/UMPermissionsInterface/UMPermissionsInterface.framework",
+				"${BUILT_PRODUCTS_DIR}/UMReactNativeAdapter/UMReactNativeAdapter.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-vbt-cirrusmd-bridge-library/react_native_vbt_cirrusmd_bridge_library.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Appboy_iOS_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AwaitKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CirrusMDSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXConstants.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXFileSystem.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXImageLoader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPermissions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBReactNativeSpec.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KTVJSONWebToken.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreModules.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTAnimation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTBlob.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTLinking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTSettings.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTVibration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cxxreact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsireact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsinspector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UDF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UMAppLoader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UMCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UMPermissionsInterface.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UMReactNativeAdapter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_vbt_cirrusmd_bridge_library.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VbtCirrusmdBridgeLibraryExample/Pods-VbtCirrusmdBridgeLibraryExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,24 +489,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1D60D28B925C94BD88E79D7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VbtCirrusmdBridgeLibraryExample/Pods-VbtCirrusmdBridgeLibraryExample-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VbtCirrusmdBridgeLibraryExample/Pods-VbtCirrusmdBridgeLibraryExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
