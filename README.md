@@ -23,11 +23,16 @@ VbtCirrusmdBridgeLibrary.loadAndroidView()
 ``` 
  
 # Installation
+
+```js
+npm install react-native-vbt-cirrusmd-bridge-library
+```
+
 #### IOS
 For IOS you will need to add [CirrusMD SDK](https://github.com/CirrusMD/CirrusMD-iOS-SDK-Example) in your project in order to work.
 #### Adding CirrusMD SDK
 Install Cocoapods:
-```gem install cocapods```
+```gem install cocoapods```
 
 Customize project podfile:
 ```
