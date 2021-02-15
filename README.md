@@ -2,7 +2,7 @@
 
 Library for CirrusMD SDK RN bridge, for both IOS and Android.
 
-[![npm](https://img.shields.io/npm/v/react-native-rn-cirrus-md-sdk-library?color=green)](https://www.npmjs.com/package/react-native-rn-cirrus-md-sdk-library)
+[![npm](https://img.shields.io/npm/v/react-native-rn-cirrus-md-sdk-library?color=green)](https://www.npmjs.com/package/react-native-vbt-cirrusmd-bridge-library)
 
 # Example Application
  To run example app clone the project, run `yarn` (bob will install all deps), start the app with `yarn example ios` or `yarn example android`.
