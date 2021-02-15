@@ -72,6 +72,23 @@ jcenter()
 maven { url 'https://www.jitpack.io' }
 ```
 
+# Common build failed errors
+### Error with auto-linked libraries
+```
+ld: warning: Could not find or use auto-linked library 'swiftWebKit'
+ld: warning: Could not find or use auto-linked library 'swiftCoreMIDI'
+ld: warning: Could not find or use auto-linked library 'swiftUniformTypeIdentifiers'
+```
+
+### The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0
+
+Open IOS folder in xcode, go to build settings, search for `IOS Deployment Target` and set it to `12`.
+Navigate to your ios folder and create `File.swift` file. You must have `import Foundation` on top.
+
+### Error: Failed to install the app. Make sure you have the Android development environment set up
+Make sure your ANDROID_SDK_PATH is set.
+If you don't have it just open yourApp/android folder in android studio and it should automatically add sdk.dir in `local.properties`.
+
 
 ## Contributing
 
