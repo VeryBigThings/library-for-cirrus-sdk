@@ -55,7 +55,7 @@ And in dependencies in `package.json` add next line: ``` "react-native-unimodule
 
 Because we are using ```use_frameworks``` flag you should also disable flipper.
 
-Run `yarn` to install all dependencies and `yarn example ios` to start the app.
+Run `yarn` to install all dependencies, run `pod install` in ios folder to update pods, run `react-native run-ios` to start app.
 
 #### Android
 In order to work on android you must:
