@@ -5,6 +5,21 @@ Library for CirrusMD SDK RN bridge, for both IOS and Android.
 # Example Application
  To run example app clone the project, run `yarn` (bob will install all deps), start the app with `yarn example ios` or `yarn example android`.
  
+ # Usage
+ ```js
+ import VbtCirrusmdBridgeLibrary from 'react-native-vbt-cirrusmd-bridge-library'; //import Library
+ ```
+ ### IOS
+```js
+VbtCirrusmdBridgeLibrary.loginIos(sdkid, patientid, secret);
+VbtCirrusmdBridgeLibrary.loadIosView()
+```
+### Android
+```js
+VbtCirrusmdBridgeLibrary.loginAndroid(sdkid, patientid.toString(), secret);
+VbtCirrusmdBridgeLibrary.loadAndroidView()
+``` 
+ 
 # Installation
 #### IOS
 For IOS you will need to add [CirrusMD SDK](https://github.com/CirrusMD/CirrusMD-iOS-SDK-Example) in your project in order to work.
