@@ -1,5 +1,6 @@
 package com.reactnativevbtcirrusmdbridgelibrary
 
+import android.content.Intent
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
@@ -11,14 +12,19 @@ class VbtCirrusmdBridgeLibraryModule(reactContext: ReactApplicationContext) : Re
         return "VbtCirrusmdBridgeLibrary"
     }
 
-    // Example method
-    // See https://reactnative.dev/docs/native-modules-android
-    @ReactMethod
-    fun multiply(a: Int, b: Int, promise: Promise) {
-    
-      promise.resolve(a * b)
-    
-    }
+  var context: ReactApplicationContext = reactApplicationContext
 
-    
+  @ReactMethod
+  fun loginAndroid(sdkId: String, patientId: String, secret: String){
+    val cirrus = CirrusMDSDK.SingletonCirrus.login(sdkId, patientId, secret, context)
+  }
+
+  @ReactMethod
+  fun loadAndroidView(){
+    val intent = CirrusMDSDK.SingletonCirrus.activity
+    if (intent != null) {
+      intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+      reactApplicationContext.startActivity(intent)
+    }
+  }
 }

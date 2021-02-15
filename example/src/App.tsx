@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text, Button } from 'react-native';
+import { StyleSheet, View, Text, Platform, Button } from 'react-native';
 import VbtCirrusmdBridgeLibrary from 'react-native-vbt-cirrusmd-bridge-library';
 
 
@@ -12,16 +12,30 @@ var secret = "eyJzaGFyZWRfc2VjcmV0IjoiOTg0MDMyNDYtMGJmMS00ZjNjLWFhMTktMDg1ZWFiMG
 export default function App() {
 
   const loginAndRedirect =async () => {
-    await VbtCirrusmdBridgeLibrary.login(sdkid, patientid, secret);
-    VbtCirrusmdBridgeLibrary.loadView()
+    await VbtCirrusmdBridgeLibrary.loginIos(sdkid, patientid, secret);
+    VbtCirrusmdBridgeLibrary.loadIosView()
+  }
+    const login = () => {
+    VbtCirrusmdBridgeLibrary.loginAndroid(sdkid, patientid.toString(), secret);
+    }
+    const redirect = () => {
+    VbtCirrusmdBridgeLibrary.loadAndroidView()
   }
 
-
-  return (
+  if (Platform.OS === 'ios') {
+    return (
     <View style={styles.container}>
       <Button title="Login and redirect" onPress={ () => loginAndRedirect() }/>
     </View>
   );
+  } else {
+    return (
+    <View style={styles.container}>
+        <Button title="Login" onPress={() => login()} />
+        <Button title="Redirect" onPress={ () => redirect() }/>
+    </View>
+  );
+  }
 }
 
 const styles = StyleSheet.create({

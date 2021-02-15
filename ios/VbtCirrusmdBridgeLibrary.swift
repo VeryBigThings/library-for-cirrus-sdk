@@ -7,7 +7,7 @@ import UIKit
 class VbtCirrusmdBridgeLibrary: NSObject {
     
     @objc
-    func loadView() {
+    func loadIosView() {
         DispatchQueue.main.async {
             let vc = CirrusMDSDK.singleton.viewController
             UIApplication.shared.windows.first?.rootViewController = UINavigationController(rootViewController: vc)
@@ -29,7 +29,7 @@ class VbtCirrusmdBridgeLibrary: NSObject {
   
   //function to export
   @objc
-  func login(_ sdkId: String,patientIden patientId: Int, secret token: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject:@escaping RCTPromiseRejectBlock) -> Void
+  func loginIos(_ sdkId: String,patientIden patientId: Int, secret token: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject:@escaping RCTPromiseRejectBlock) -> Void
     {
       self.secret = token
       self.sdkId = sdkId
